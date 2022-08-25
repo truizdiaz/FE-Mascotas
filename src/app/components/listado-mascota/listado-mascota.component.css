@@ -1,42 +1,32 @@
 table {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .title {
-    padding: 30px;
-    background-color: #666;
-    text-align: center;
-    color: white;
-  }
+td,
+th {
+  width: 15%;
+}
 
-  .container {
-    margin: 0 20%
-  }
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
 
-  td, th {
-    width: 15%;
-  }
+.delete {
+  cursor: pointer;
+  color: #E15639
+}
 
-  .mat-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
+.edit {
+  cursor: pointer;
+  color: #1878B0
+}
 
-  .delete {
-    cursor: pointer;
-    color: #E15639
-  }
+.search {
+  cursor: pointer;
+}
 
-  .edit {
-    cursor: pointer;
-    color: #1878B0
-  }
-
-  .search {
-    cursor: pointer;
-  }
-
-  .agregar {
-    font-size: 10px;
-    line-height: 28px;
-  }
+.agregar {
+  font-size: 10px;
+  line-height: 28px;
+}
