@@ -4,19 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Modulos
+import { SharedModule } from './shared/shared.module';
+
 // Componentes
 import { AgregarEditarMascotaComponent } from './components/agregar-editar-mascota/agregar-editar-mascota.component';
 import { ListadoMascotaComponent } from './components/listado-mascota/listado-mascota.component';
 import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-// Angular Material
-import { MatSliderModule } from '@angular/material/slider';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -29,12 +24,7 @@ import { MatInputModule } from '@angular/material/input';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatFormFieldModule,
-    MatInputModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

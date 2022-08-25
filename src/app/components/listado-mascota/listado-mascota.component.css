@@ -21,3 +21,22 @@ table {
     font-size: 14px;
     width: 100%;
   }
+
+  .delete {
+    cursor: pointer;
+    color: #E15639
+  }
+
+  .edit {
+    cursor: pointer;
+    color: #1878B0
+  }
+
+  .search {
+    cursor: pointer;
+  }
+
+  .agregar {
+    font-size: 10px;
+    line-height: 28px;
+  }
