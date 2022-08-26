@@ -7,40 +7,40 @@
         <mat-card-subtitle>
             Datos de la mascota
         </mat-card-subtitle>
-        <form>
+        <form [formGroup]="form" (ngSubmit)="agregarMascota()">
             <mat-grid-list cols="2" rowHeight="80px">
                 <mat-grid-tile [colspan]="2">
                     <mat-form-field appearance="outline">
                         <mat-label>Nombre</mat-label>
-                        <input matInput autocomplete="off">
+                        <input formControlName="nombre" matInput autocomplete="off">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-form-field appearance="outline">
                         <mat-label>Raza</mat-label>
-                        <input matInput autocomplete="off">
+                        <input formControlName="raza" matInput autocomplete="off">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-form-field appearance="outline">
                         <mat-label>Color</mat-label>
-                        <input matInput autocomplete="off">
+                        <input formControlName="color" matInput autocomplete="off">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-form-field appearance="outline">
                         <mat-label>Edad</mat-label>
-                        <input matInput autocomplete="off">
+                        <input type="number" formControlName="edad" matInput autocomplete="off">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-form-field appearance="outline">
                         <mat-label>Peso</mat-label>
-                        <input matInput autocomplete="off">
+                        <input type="number" formControlName="peso" matInput autocomplete="off">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="2">
-                    <button class="btnAceptar" mat-raised-button color="primary">Aceptar</button>
+                    <button [disabled]="form.invalid" type="submit" class="btnAceptar" mat-raised-button color="primary">Aceptar</button>
                     <button mat-raised-button routerLink="/listMascotas">Volver</button>
                 </mat-grid-tile>
             </mat-grid-list>
