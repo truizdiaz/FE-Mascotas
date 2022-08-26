@@ -2,7 +2,7 @@
     <h1>Listado de Mascotas</h1>
 </div>
 <app-spinner *ngIf="loading"></app-spinner>
-<div class="container">
+<div *ngIf="dataSource.data.length > 0" class="container">
     <mat-form-field appearance="standard">
         <mat-label>Filtro</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Buscar" #input autocomplete="off">
