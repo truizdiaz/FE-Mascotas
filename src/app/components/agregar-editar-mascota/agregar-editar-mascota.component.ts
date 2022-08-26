@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-editar-mascota.component.css']
 })
 export class AgregarEditarMascotaComponent implements OnInit {
+  loading: boolean = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
