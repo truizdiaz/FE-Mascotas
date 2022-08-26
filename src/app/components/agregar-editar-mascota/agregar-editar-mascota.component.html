@@ -1,5 +1,5 @@
 <div class="title">
-    <h1>Agregar Mascota</h1>
+    <h1>{{ operacion }} Mascota</h1>
 </div>
 <app-spinner *ngIf="loading"></app-spinner>
 <div class="container">
@@ -7,7 +7,7 @@
         <mat-card-subtitle>
             Datos de la mascota
         </mat-card-subtitle>
-        <form [formGroup]="form" (ngSubmit)="agregarMascota()">
+        <form [formGroup]="form" (ngSubmit)="agregarEditarMascota()">
             <mat-grid-list cols="2" rowHeight="80px">
                 <mat-grid-tile [colspan]="2">
                     <mat-form-field appearance="outline">
