@@ -39,7 +39,7 @@
                 <button [routerLink]="['/agregarMascota']" class="agregar" mat-raised-button color="primary">Aceptar</button>    
             </th>
             <td mat-cell *matCellDef="let element"> 
-                <mat-icon routerLink="/verMascota/2" matTooltip="Ver" class="search" fontIcon="search"></mat-icon> 
+                <mat-icon routerLink="/verMascota/{{ element.id }}" matTooltip="Ver" class="search" fontIcon="search"></mat-icon> 
                 <mat-icon routerLink="/editarMascota/2" matTooltip="Editar" class="edit" fontIcon="edit"></mat-icon>    
                 <mat-icon (click)="eliminarMascota()" matTooltip="Eliminar" class="delete" fontIcon="delete"></mat-icon>    
             </td>
